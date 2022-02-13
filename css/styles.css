@@ -1,0 +1,1270 @@
+/* =====================VARIABLES==================== */
+
+:root {
+    --turquesa: #66B1B3;
+    --celeste: #7CD7D9;
+    --celesteB: #75CACC;
+    --turquesaVerdoso: #2C4C4D;
+    --turquesaAzulado: #508B8C;
+}
+
+
+/* =====================VARIABLES==================== */
+
+
+/* =====================GENERAL==================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: 2.4em;
+}
+
+h2 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+.container-horizontal {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-vertical {
+    padding: 50px 0;
+}
+
+
+/* =====================GENERAL==================== */
+
+
+
+    /*  -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                            INDEX PAGE
+        -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  */
+/* ====================HEADER=================== */
+
+.header-container {
+    position: fixed;
+    background-color: transparent;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s;
+    z-index: 2;
+    color: #fff;
+}
+
+.header-container-horizontal {
+    max-width: 1100px;
+    width: 90%;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+}
+
+.header-is-active {
+    background-color: #fff;
+    box-shadow: 0px 0px 11px 0px #0000009e;
+}
+
+.header-is-active .links a {
+    color: #000000;
+}
+
+.logo-container img {
+    width: 180px;
+}
+
+.icon-menu2 {
+    font-size: 2.5em;
+}
+
+.icn-x {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.menu-container {
+    position: fixed;
+    right: -100vw;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.menu {
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-is-active {
+    right: 0;
+    color: #000000;
+}
+
+.menu-is-active .links a {
+    color: #000000;
+} 
+
+.links li {
+    height: 40px;
+    text-align: center;
+}
+
+.links a {
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.3em;
+    transition: .3s;
+}
+
+.links a:hover {
+    color: #75cacc;
+}
+
+.menu-mobile-container span{
+    font-weight: 1000;
+}
+
+
+/* ====================HEADER=================== */
+
+
+
+/* ====================BANNER=================== */
+
+.banner {
+    background: linear-gradient(to right, rgba(44, 76, 77, 0.76), rgba(44, 76, 77, 0.33)), url(../images/beach.jpg);
+    width: 100%;
+    height: 108vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.banner-description {
+    text-align: left;
+}
+
+.banner-curve {
+    height: 70px;
+    width: 100%; 
+    overflow: hidden;
+    bottom: -1px;
+    position: absolute;
+}
+
+.banner-button {
+    margin-top: 10px;
+}
+
+.banner-button input {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-weight: 600;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.banner-button input:hover {
+    background-color: rgba(255, 255, 255, 0.267);
+    color: #fff;
+}
+
+
+/* ====================BANNER=================== */
+
+/* ====================COUNTRY=================== */
+
+.country-section {
+    background: #fff;
+}
+
+.country-container-vertical {
+    padding: 10px 0 50px;
+}
+
+.country-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(288px, 1fr) );
+    justify-content: center;
+    gap: 20px; 
+}
+
+.country {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 0px #0000009e;
+}
+
+.country-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: .3s;
+    transform: scale(1.15);
+}
+
+.country-text {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    background: linear-gradient(to right, rgba(44, 76, 77, 0.36), rgba(44, 76, 77, 0.10));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    
+}
+
+.content h4{
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+.country:hover .country-text{
+    background: transparent;
+}
+
+.country:hover .country-img img {
+    transform: scale(1);
+}
+
+.country-text h3 {
+    text-transform: capitalize;
+}
+
+/* ====================COUNTRY=================== */
+
+/* ====================MAIN=================== */
+
+.main {
+    background: #ffff;
+}
+
+.travel-section {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(288px, 1fr) );
+    gap: 40px;
+}
+
+.travel {
+    box-shadow: 0px 0px 12px 0px #00000082;
+}
+
+.travel-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.travel-text {
+    padding: 10px;
+}
+
+.travel-text h3 {
+    text-align: center;
+}
+
+.travel-price {
+    background-color: #66b1b3;
+    color: #fff;
+    border-bottom-left-radius: 15px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.travel-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.travel-stars {
+    display: flex;
+}
+
+.travel-stars small {
+    margin-left: 5px;
+    font-size: 1em;
+}
+
+.icon-star-half, .icon-star-full {
+    font-size: 1em;
+    color: #e8df1b;
+}
+
+.travel-small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.travel-small small {
+    font-size: .9em;
+}
+
+.travel-button {
+    text-align: center;
+}
+
+.travel-button input {
+    background-color: #66b1b3;
+    color: #fff;
+    border-radius: 30px;
+    padding: 7px 30px;
+    font-weight: 600;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.travel-button input:hover {
+    background-color: #4e9597;
+    cursor: pointer;
+}
+
+.show-travels-btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.show-travels-btn button {
+    border: 2px solid var(--turquesaAzulado);
+    text-transform: capitalize;
+    padding: 10px 15px;
+    outline: none;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.show-travels-btn button:hover {
+    background-color: var(--turquesaAzulado);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ====================MAIN=================== */
+
+/* ======================PUBLICITY===================== */
+.publicity-section {
+    background: linear-gradient(to right, rgba(44, 76, 77, 0.76), rgba(44, 76, 77, 0.33)),  url(../images/nature-4613735_960_720.jpg);
+    width: 100%;
+    height:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 70%;
+}
+
+.publicity-container-horizontal {
+    max-width: 1100px;
+    margin: 0 10px;
+}
+
+.publicity-container {
+    overflow-x: scroll;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3,265px);
+    gap: 15px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.publicity {
+    width: 100%;
+    overflow: hidden;
+}
+
+.publicity-image {
+    overflow: hidden;
+}
+
+.publicity-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 225px;
+}
+
+.publicity-text {
+    color: #fff;
+    padding: 10px;
+}
+
+.publicity-text h3 {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.publicity-button {
+    text-align: center;
+}
+
+.publicity-button input{
+    background-color: #66b1b3;
+    color: #fff;
+    border-radius: 30px;
+    padding: 7px 30px;
+    font-weight: 600;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+.publicity-button input:hover {
+    background-color: #66b0b34d;
+}
+
+/* ======================PUBLICITY===================== */
+
+/* ======================WE===================== */
+.we-section {
+    background: linear-gradient(to right, rgba(44, 76, 77, 0.76), rgba(44, 76, 77, 0.33)), url(../images/london-eye-945497_1920.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 70%;
+}
+
+.we-section h2 {
+    color: #fff;
+}
+
+.we {
+    background-color: #fff;
+    padding: 20px;
+    transition: .3s;
+}
+
+.we:hover {
+    transform: scale(1.1);
+    transition: all ease .35s;
+    cursor: default;
+}
+
+.we-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "we-1"
+                         "we-2"
+                         "we-3";
+    gap: 30px;
+}
+
+.we-area-1 {
+    grid-area: we-1;
+}
+
+.we-area-2 {
+    grid-area: we-2;
+}
+
+.we-area-3 {
+    grid-area: we-3;
+}
+
+.we-title-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.we-img img {
+    width: 50px;
+    margin-right: 3px;
+}
+
+.we-title-img-container h3 {
+    text-transform: capitalize;
+}
+
+/* ======================WE===================== */
+
+/* ======================VISA===================== */
+
+.visa-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visa-title img {
+    width: 43px;
+    margin-right: 15px;
+}
+
+.visa-container h2{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.visa-container p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.visa-container-countries {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.visa-country {
+    display: grid;
+    grid-gap: 6px 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.visa-country img {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.visa-button {
+    display: flex;
+    justify-content: center;
+}
+
+.visa-button button{
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 7px 30px;
+    font-weight: 600;
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: .3s;
+    box-shadow: 0px 0px 11px 0px #0000009e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visa-button img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.visa-button button:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+/* ======================VISA===================== */
+
+/* ======================CONTACT===================== */
+
+.contact-section {
+    background: #fff;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "contact-1"
+        "contact-2"
+        "contact-3";
+    grid-gap: 20px;
+}
+
+.contact-area-1 {
+    grid-area: contact-1;
+}
+
+.contact-area-2 {
+    grid-area: contact-2;
+}
+
+.contact-area-3 {
+    grid-area: contact-3;
+}
+
+.contact-img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-img img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+} 
+
+.contact-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* ======================CONTACT===================== */
+
+/* ======================FOOTER===================== */
+.footer {
+    background: linear-gradient(to right, rgba(44, 76, 77, 0.76), rgba(44, 76, 77, 0.33)), url(../images/ocean.jpg);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.footer-curve {
+    height: 60px;
+    width: 100%; 
+    overflow: hidden;
+    top: -1px;
+    position: absolute;
+}
+
+.container-vertical-footer {
+    padding: 50px 0 10px;
+}
+
+.footer-sections {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 7px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 288px) );
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content a {
+    color: #fff;
+    display: block;
+    text-align: left;
+    transition: .2s;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+    padding-left: 2px;
+}
+
+.footer-content h5 {
+    text-transform: capitalize;
+    font-size: 1.4em;
+    font-weight: 800;
+    text-align: left;
+    color: var(--celesteB);
+}
+
+.sub-footer {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+.sub-footer p {
+    margin-bottom: 5px;
+}
+
+.sub-footer a {
+    color: var(--celesteB);
+}
+
+/* ======================FOOTER===================== */
+
+ 
+    /* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                            SOMOS PAGE
+       -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  */
+
+
+/* ======================BANNER2===================== */
+.banner2 {
+    background: linear-gradient(to right, rgba(44, 76, 77, 0.76), rgba(44, 76, 77, 0.33)), url(../images/workplace-1245776_1920.jpg);
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.banner2-description {
+    text-align: center;
+}
+/* ======================BANNER2===================== */
+
+
+
+/* ======================WHO-WE===================== */
+.container-vertical-who-we{
+    padding: 20px 0 50px;
+}
+
+.who-we-content p {
+    color: #676767;
+    margin-bottom: 10px;
+}
+/* ======================WHO-WE===================== */
+
+
+
+/* ======================MISION-VISION===================== */
+.mision-section {
+    background: linear-gradient(to right, rgba(44, 76, 77, 0.76), rgba(44, 76, 77, 0.33)), url(../images/man-and-woman-near-table-3184465.jpg);
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+/* .mision h3 {
+    color: #444444;
+}
+
+.mision-text p {
+    color: #676767;
+} */
+
+.vision {
+    margin-top: 20px;
+}
+/* ======================MISION-VISION===================== */
+
+
+
+/* ======================BENEFIT===================== */
+.benefit-content p {
+    color: #676767;
+}
+/* ======================BENEFIT===================== */
+
+
+
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                            TRAVELS PAGE
+       -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  */
+       
+
+/* ======================BANNER4===================== */
+.banner3 {
+    background: linear-gradient(to right, rgba(44, 76, 77, 0.76), rgba(44, 76, 77, 0.33)), url(../images/estas_si/avion.jpg);
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.banner3-description {
+    text-align: center;
+}
+/* ====================== BANNER3 ===================== */
+
+
+
+
+
+
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                            VISA PAGE
+       -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  */
+
+
+/* ======================BANNER4===================== */
+
+.banner4 {
+    background: linear-gradient(to right, rgba(44, 76, 77, 0.76), rgba(44, 76, 77, 0.33)), url(../images/estas_si/pass-page1.jpg);
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.banner4-description {
+    text-align: center;
+}
+
+/* ======================BANNER4===================== */
+
+/* ======================VISA-PAGE===================== */
+.visa-page-background-visa {
+    background: url(../images/estas_si/pass-page3.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    color: #fff;
+}
+
+.visa-page-form h2 {
+    color: #000000;
+    text-align: left;
+    margin: 10px;
+}
+
+.visa-page-form {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+}
+
+.visa-page-form label {
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #000000;
+}
+
+.visa-page-form input {
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    width: 100%;
+    margin: 5px 0 10px;
+    box-shadow: 0px 0px 6px 0px #0000009e;
+}
+
+.visa-page-form textarea {
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    height: 150px;
+    margin: 5px 0 10px;
+    resize: none;
+    box-shadow: 0px 0px 6px 0px #0000009e;
+}
+
+.visa-page-plus-description p{
+    color: #508B8C;
+    margin-bottom:20px;
+}
+
+.visa-page-plus-description a{
+    color: var(--turquesa);
+}
+
+.send {
+    text-align: right;
+}
+
+.send input{
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    transition: .3s;
+    border-radius: 5px;
+    text-align: center;
+    color: #000;
+    height: 40px;
+    width: 80px;
+    box-shadow: 0px 0px 6px 0px #0000009e;
+}
+
+.send input:hover {
+    background-color: var(--turquesaAzulado);
+    color: #fff;
+    cursor: pointer;
+}
+/* ======================VISA-PAGE===================== */
+
+
+
+/* ======================TRAVEL-PAGE===================== */
+.travel-page-grid {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(288px, 1fr) );
+    gap: 20px;
+    justify-content: center;
+}
+
+.travel-page {
+    box-shadow: 0px 0px 10px 1px #000000cf;
+}
+
+.travel-page-img img {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.travel-img-discount {
+    position: relative;
+}
+
+.discount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--celeste);
+    width: 70px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.discount p {
+    color: #fff;
+    font-size: 1.4em;
+}
+
+.travel-page-price {
+    position: absolute;
+    bottom: 0;
+    left: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--celeste);
+    padding: 6px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+}
+
+.travel-page-price p {
+    font-size: 1.4em;
+    margin-left: 5px;
+}
+
+.travel-page-price small {
+    text-decoration: line-through;
+}
+
+.travel-page-content {
+    padding: 10px 15px 15px;
+}
+
+.travel-page-title h3 {
+    font-size: 1.5em;
+}
+
+.travel-page-title small {
+    margin-left: 30px;
+}
+
+.raiting-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.travel-page-rating {
+    display: flex;
+    align-items: center;
+}
+
+.points-raiting {
+    background-color: var(--celeste);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.raiting-btn-container input {
+    background: var(--celeste);
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    transition: .2s;
+}
+
+.raiting-btn-container input:hover {
+    background-color: var(--turquesa);
+    cursor: pointer;
+}
+/* ======================TRAVEL-PAGE===================== */
+
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                            CONTACT PAGE
+       -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+  */
+
+/* ======================CONTACT-PAGE===================== */
+
+.contact-page-section {
+    background: linear-gradient(to right, rgba(44, 76, 77, 0.76), rgba(44, 76, 77, 0.33)), url(../images/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    color: #fff;
+}
+
+.contact-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-page-form {
+    margin-top: 70px;
+}
+/* ======================CONTACT-PAGE===================== */
+
+
+
+
+/* ======================BANNER5===================== */
+.banner5 {
+    background: linear-gradient(to right, rgba(44, 76, 77, 0.76), rgba(44, 76, 77, 0.33)), url(../images/cancun-1228131_1920.jpg);
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.banner5-h3 {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px 15px 0 0;
+    padding: 8px 12px 0;
+}
+
+.banner5 h1 {
+    font-size: 3.5em;
+}
+/* ======================BANNER5===================== */
+
+/* ======================INFO-FORM-TRAVELS===================== */
+.container-vertical-info-form {
+    padding: 70px 0;
+}
+
+.info-form-travel-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.info-travel-container {
+    box-shadow: 0px 0px 7px 0px #000000ad;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.info-form-travel-price {
+    display: flex;
+    align-items: center;
+}
+
+.info-travel-star-p p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.info-form-travel-price small {
+    text-decoration: line-through;
+    font-weight: 600;
+}
+
+.info-form-travel-price p {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.info-form-travels-stars-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.info-form-p-input p {
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.info-form-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.info-form-btn input {
+    width: 120px;
+    height: 35px;  
+    background: none; 
+    outline: none;
+    border: 1px solid #00000052;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.info-travel-form {
+    box-shadow: 0px 0px 7px 0px #000000ad;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.info-travel-form label {
+    font-weight: 600;
+}
+
+.info-travel-form input {
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid #00000052;
+}
+
+.info-travel-message textarea {
+    width: 100%;
+    height: 50px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid #00000052;
+    resize: none;
+}
+
+.info-travel-send {
+    display: flex;
+    justify-content: center;
+}
+
+.info-travel-send input {
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #00000052;
+    font-weight: 600;
+}
+/* ======================INFO-FORM-TRAVELS===================== */
+
+

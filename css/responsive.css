@@ -1,0 +1,233 @@
+@media screen and (min-width:320px){
+    /* Nothing for now*/
+    
+}
+
+@media screen and (min-width:480px){ 
+
+    /* We section */
+
+    .we-container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: "we-1 we-1 we-2 we-2"
+                             ". we-3 we-3 .";
+        gap: 30px;
+    }
+
+    /* Contact  */
+
+    .contact-container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas:
+            "contact-1 contact-1 contact-2 contact-2"
+            ". contact-3 contact-3 .";
+        gap: 30px;
+    }
+
+    /* Banner  */
+
+    .banner-description {
+        width: 60%;
+    }
+
+    .visa-container-countries {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    /* Visa  */
+
+    .visa-page-form h2 {
+        text-align: center;
+    }
+
+    .name-and-tel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .tel {
+        margin-left: 10px;
+    }
+
+    .name {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px){
+
+    .menu-is-active .links a {
+        color: #fff;
+    }
+
+    .header-is-active .links a {
+        color: #000000;
+    }
+
+    /* We section */
+
+    .we-container {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: "we-1 we-2 we-3";
+    }
+    
+    /* Contact  */
+
+    .contact-container {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas:
+            "contact-1 contact-2 contact-3";
+    }
+
+    /* Banner  */
+    .banner-button input {
+        background-color: #ffffff;
+        border-radius: 30px;
+        padding: 10px 50px;
+        font-weight: 600;
+        margin: 0 auto;
+        border: none;
+        outline: none;
+        font-size: 1.5em;
+        cursor: pointer;
+        transition: .3s;
+        margin-top: 10px;
+    }
+
+    /* Menu  */
+    .menu-container {
+        position: static;
+        transition: .3s;
+        width: auto;
+    }
+
+    .menu {
+        background: none;
+        width: auto;
+        height: auto;
+    }
+    
+
+    .menu-mobile-container, .icn-x {
+        display: none;
+    }
+
+    .links li {
+        text-align: center;
+        display: inline-block;
+        margin: 10px;
+        height: auto;
+    }
+
+
+    /* Banner  */
+    .banner-description {
+        font-size: 2.3em;
+    }
+
+    .banner-description p {
+        font-size: .6em;
+    }
+
+    /* Travel  */
+
+    .visa-container p {
+        font-size: 1.3em;
+    }
+
+    /* Visa  */
+
+    .visa-page-form {
+        width: 61%;
+        padding: 20px 40px;
+    }
+    
+    /* info-form-travel */
+    .info-form-travel-container {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media screen and (min-width:1024px){
+
+    h2 {
+        font-size: 2.8em;
+    }
+    
+    /* Country Section   */  
+    .country-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "country-1 country-1 country-2 country-3"
+                             "country-4 country-5 country-6 country-6";
+        gap: 10px; 
+    }
+    
+    .country-area-1 {
+        grid-area: country-1;
+    }
+    .country-area-2 {
+        grid-area: country-2;
+    }
+    .country-area-3 {
+        grid-area: country-3;
+    }
+    .country-area-4 {
+        grid-area: country-4;
+    }
+    .country-area-5 {
+        grid-area: country-5;
+    }
+    .country-area-6 {
+        grid-area: country-6;
+    }
+
+    /* Banner  */
+    .banner-description {
+        font-size: 3em;
+    }
+
+    /* Publiciy Section  */
+    .publicity-container {
+        overflow-x: hidden;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    }
+
+    .publicity-text h3{
+        font-size: 2.3em;
+    }
+
+    .publicity-text p {
+        font-size: 1.1em;
+    }
+
+    /* Footer  */
+
+    .footer {
+        height: 400px;
+    }
+    .footer-content h5 {
+        font-size: 2em;
+    }
+    .footer-content a {
+        font-size: 1.3em;
+    }
+    .sub-footer {
+        margin-top: 100px;
+    }
+    .sub-footer p {
+        font-size: 1.3em;
+    } 
+    .sub-footer a {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+}
+
+
